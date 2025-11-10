@@ -1,0 +1,39 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-store/
+.env
+
+# Node-RED (flows and credentials created at runtime)
+flows*.json
+flows_*.json
+flows_cred*.json
+flows_cred_*.json
+*.flows.json
+*.flow.json
+.config.json
+*.backup
+
+# Arduino / PlatformIO build artifacts
+*.elf
+*.hex
+*.bin
+*.eep
+*.map
+*.zip
+/.pio/
+/.pioenvs/
+/build/
+/.arduino/
+/.arduino15/
+arduino_debug.log
+
+# Editor / OS
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+.DS_Store
+Thumbs.db
