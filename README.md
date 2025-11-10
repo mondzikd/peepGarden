@@ -39,9 +39,7 @@ LAN soil moisture monitoring system, showing current and historic data on Node-R
 
 ## Installation
 
-### Infrastructure
-
-#### LAN setup
+### LAN setup
 
 You can learn more about possible solutions here: [How to make a machine accessible from the LAN using its hostname](https://unix.stackexchange.com/questions/16890/how-to-make-a-machine-accessible-from-the-lan-using-its-hostname). We will use local DNS Server.
 
@@ -52,7 +50,7 @@ You can learn more about possible solutions here: [How to make a machine accessi
 
 3. Install and setup LAN DNS - To have reuslts available behind user-friendly DNS address, let's configure LAN DNS on Raspberry Pi. Install [Pi-hole](https://pi-hole.net) on Raspberry. Configure "Local DNS Record" with human-friendly name (For example `pi.lan`) and point it to static IP address from point 1.
 
-#### MQTT Broker
+### MQTT Broker
 
 [Install Mosquitto MQTT Broker on Raspberry Pi.](https://randomnerdtutorials.com/how-to-install-mosquitto-broker-on-raspberry-pi) with remote access enabled (authentication not needed).
 
@@ -65,7 +63,7 @@ allow_anonymous true
 
 Important part is making broker start on system boot `sudo systemctl enable mosquitto.service`, otherwise you need to start it each system boot manually.
 
-#### Node-RED
+### Node-RED
 
 [Install Node-RED on Raspberry Pi.](https://randomnerdtutorials.com/install-node-red-raspberry-pi)
 
@@ -73,6 +71,6 @@ Important part is making server start on system boot `sudo systemctl enable node
 
 You can access Admin console in LAN network behind http://pi.lan:1880
 
-## Schema with sensors
+### Schema with sensors
 
-## Working prototype
+### Working prototype
