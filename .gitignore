@@ -29,6 +29,7 @@ flows_cred_*.json
 /.arduino/
 /.arduino15/
 arduino_debug.log
+**/secrets.h
 
 # Editor / OS
 .vscode/
